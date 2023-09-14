@@ -7,29 +7,29 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-    // {
-    //     Console.Write("Введите первое число: ");
-    //     int a = int.Parse(Console.ReadLine());
+// {
+//     Console.Write("Введите первое число: ");
+//     int a = int.Parse(Console.ReadLine());
 
-    //     Console.Write("Введите второе число: ");
-    //     int b = int.Parse(Console.ReadLine());
+//     Console.Write("Введите второе число: ");
+//     int b = int.Parse(Console.ReadLine());
 
-    //     int max, min;
+//     int max, min;
 
-    //     if (a > b)
-    //     {
-    //         max = a;
-    //         min = b;
-    //     }
-    //     else
-    //     {
-    //         max = b;
-    //         min = a;
-    //     }
+//     if (a > b)
+//     {
+//         max = a;
+//         min = b;
+//     }
+//     else
+//     {
+//         max = b;
+//         min = a;
+//     }
 
-    //     Console.WriteLine($"Максимальное число: {max}");
-    //     Console.WriteLine($"Минимальное число: {min}");
-    // }
+//     Console.WriteLine($"Максимальное число: {max}");
+//     Console.WriteLine($"Минимальное число: {min}");
+// }
 
 //         Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 // 2, 3, 7 -> 7
@@ -38,7 +38,7 @@
 
 //         {
 //         Console.WriteLine("Введите три числа:");
-        
+
 //         // Считываем три числа с консоли
 //         int number1 = int.Parse(Console.ReadLine());
 //         int number2 = int.Parse(Console.ReadLine());
@@ -55,40 +55,77 @@
 // 4 -> да
 // -3 -> нет
 // 7 -> нет
-  
 
-    // {
-    //     Console.WriteLine("Введите число:");
-    //     int number = int.Parse(Console.ReadLine());
 
-    //     if (number % 2 == 0)
-    //     {
-    //         Console.WriteLine("Число является четным.");
-    //     }
-    //     else
-    //     {
-    //         Console.WriteLine("Число не является четным.");
-    //     }
-    // }
+// {
+//     Console.WriteLine("Введите число:");
+//     int number = int.Parse(Console.ReadLine());
+
+//     if (number % 2 == 0)
+//     {
+//         Console.WriteLine("Число является четным.");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Число не является четным.");
+//     }
+// }
 
 //  Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
 
-    // {
-    //     Console.Write("Введите число N: ");
-    //     if (int.TryParse(Console.ReadLine(), out int n))
-    //     {
-    //         Console.WriteLine("Четные числа от 1 до " + n + ":");
-    //         for (int i = 2; i <= n; i += 2)
-    //         {
-    //             Console.Write(i + ",");
-    //         }
-    //     }
-    //     else
-    //     {
-    //         Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
-    //     }
-    // }
+// {
+//     Console.Write("Введите число N: ");
+//     if (int.TryParse(Console.ReadLine(), out int n))
+//     {
+//         Console.WriteLine("Четные числа от 1 до " + n + ":");
+//         for (int i = 2; i <= n; i += 2)
+//         {
+//             Console.Write(i + ",");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
+//     }
+// }
 
+// Напишите программу, которая выводит случайное число из отрезка [10,99]
+// и показывает наибольшую цифру числа.
+
+// Например:
+// 78 -> 8
+// 12 -> 2
+// 85 -> 8
+
+// int num = new Random() .Next(10,100);
+// Console.WriteLine(num);
+// int num1 = new Random() .Next(10,100);
+// Console.WriteLine(num1);
+// int num2 = new Random() .Next(10,100);
+// Console.WriteLine(num2);
+
+// FindMaxDigit(num);
+// FindMaxDigit(num1);
+// FindMaxDigit(num2);
+
+// void FindMaxDigit(int number)
+// {
+// int FirstDigit=number/10;
+// int secondDigit=number%10;
+// Console.WriteLine($"{FirstDigit}, {secondDigit}");
+// if (FirstDigit > secondDigit)
+// {
+//    Console.WriteLine(FirstDigit);
+// }
+// else if(FirstDigit == secondDigit)
+// {
+//    Console.WriteLine("цифры равны");
+// }
+// else
+// {
+// Console.WriteLine(secondDigit);
+// }
+// }
