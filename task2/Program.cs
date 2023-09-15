@@ -129,3 +129,48 @@
 // Console.WriteLine(secondDigit);
 // }
 // }
+
+
+// Напишите программу, которая принимает на вход 
+// координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт 
+// номер четверти плоскости, в которой находится эта 
+// точка
+
+// int WorkWithUser(string message)
+// {
+
+//  Console.Write(message);
+//  int number = int.Parse(Console.ReadLine());
+//  return number;
+// }
+
+
+// string FundQuarter(int X, int Y )
+// {
+// string result = string.Empty;
+// if (X > 0 && Y > 0)
+// {
+//  result ="I четверть";
+// }
+// else if(X < 0 && Y > 0)
+// {
+//   result ="II четверть";
+// }
+// else if(X < 0 && Y < 0)
+// {
+//   result ="III четверть";
+// }
+// else if(X > 0 && Y < 0)
+// {
+//   result ="IV четверть";
+// }
+// else
+// {
+//   result ="Ошибка";
+// }
+// return result;
+// }
+
+// int x = WorkWithUser("Введите точку X : ");
+// int y = WorkWithUser("Введите точку Y : ");
+// Console.WriteLine(FundQuarter(x,y));
