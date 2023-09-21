@@ -259,3 +259,51 @@
 
 // Console.WriteLine($"{summ}, {summ1}, {summ2} сумма сумм {summ + summ1 + summ2}");
 
+// Задача с урока 5 
+
+// int WorkWithUser(string message)
+// {
+// Console.Write(message);
+// int number = int.Parse(Console.ReadLine());
+// return number;
+// }
+
+
+// int[] GetArray(int length, int min, int max)
+// {
+// int[] result = new int[length];
+// Random rand = new Random();
+// for (int i = 0; i < result.Length; i++)
+// {
+// result[i] = rand.Next(min, max + 1);
+// }
+// return result;
+
+// }
+
+// void PrintArray(int[] arr)
+// {
+// for (int i = 0; i < arr.Length; i++)
+// {
+// Console.Write(arr[i] + " ");
+// }
+// }
+// int[] GetSums(int[] inArray)
+// {
+// int[] res = new int[2];
+// foreach (int el in inArray)
+// {
+// if (el > 0) res[0] += el;
+// else res[1] += el;
+// }
+// return res;
+// }
+
+
+// int size = WorkWithUser("Введите размер массива: ");
+// int minValue = WorkWithUser("Введите минимальное значение диапазона: ");
+// int maxValue = WorkWithUser("Введите максимальное значение диапазона: ");
+// int[] array = GetArray(size, minValue, maxValue);
+// PrintArray(array);
+// int[] sums = GetSums(array);
+// Console.WriteLine($"Сумма положительных чисел равна {sums[0]}, сумма отрицательных {sums[1]}");
