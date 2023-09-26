@@ -307,3 +307,137 @@
 // PrintArray(array);
 // int[] sums = GetSums(array);
 // Console.WriteLine($"Сумма положительных чисел равна {sums[0]}, сумма отрицательных {sums[1]}");
+
+// задача с урока 6 
+
+// int[] GetArray(int size, int minValue, int maxValue)
+// {
+// int[] result = new int[size];
+// Random rand = new Random();
+// for (int i = 0; i < size; i++)
+// {
+// result[i] = rand.Next(minValue, maxValue);
+// }
+// return result;
+// }
+
+// void ReverseArray1(int[] arr)
+// {
+// for (int i = 0; i < arr.Length / 2; i++)
+// {
+// int temp = arr[i];
+// arr[i] = arr[arr.Length - 1 - i];
+// arr[arr.Length - 1 - i] = temp;
+// }
+// }
+
+// int[] ReverseArray2(int[] arr)
+// {
+// int[] newArray = new int[arr.Length];
+// for (int i = 0; i < arr.Length; i++)
+// {
+// newArray[i] = arr[arr.Length - 1 - i];
+// }
+// return newArray;
+// }
+
+// int[] array = GetArray(9, 0, 10);
+// Console.WriteLine(string.Join(", ", array));
+// ReverseArray1(array);
+// Console.WriteLine(string.Join(", ", array));
+// int[] reverseArray = ReverseArray2(array);
+// Console.WriteLine(string.Join(", ", reverseArray));
+
+//  Задача 40: Напишите программу, которая принимает на вход три числа и
+// проверяет, может ли существовать треугольник с сторонами такой длины.
+// Теорема о неравенстве треугольника: каждая сторона треугольника
+// меньше суммы двух других сторон.
+
+// int a = WorkWithUser("Введите сдлину стороны a: ");
+// int b = WorkWithUser("Введите сдлину стороны b: ");
+// int c = WorkWithUser("Введите сдлину стороны c: ");
+// if(Triangle(a, b, c)) Console.WriteLine("Существует");
+// else Console.WriteLine("Не существует");
+
+// int WorkWithUser(string msg)
+// {
+// Console.WriteLine(msg);
+// int num = int.Parse(Console.ReadLine());
+// return num;
+// }
+
+// bool Triangle(int a, int b, int c)
+// {
+// bool res = false;
+// if(a < (b + c) && b < (a + c) && c < (b + a)) res = true;
+// return res;
+// }
+
+// Задача 42: Напишите программу, которая будет преобразовывать
+// десятичное число в двоичное.
+// 45 -> 101101
+// 3 -> 11
+// 2 -> 10
+
+
+// Задача 42: Напишите программу, которая будет преобразовывать
+// десятичное число в двоичное.
+// 45 -> 101101
+// 3 -> 11
+// 2 -> 10
+
+
+// Console.WriteLine(Binare(2));
+// System.Console.WriteLine(Binare2(2));
+// string str = Convert.ToString(13, 2);
+// Console.WriteLine(str);
+// int Binare(int num)
+// {
+// int binare = 0;
+// int count = 1;
+// while(num >= 1)
+// {
+// binare = binare + num % 2 * count;
+// count *= 10;
+// num /= 2;
+// }
+// return binare;
+// }
+// string Binare2(int number)
+// {
+// string binare = string.Empty;
+// while(number >= 1)
+// {
+// binare = number % 2 + binare;
+// number /= 2;
+// }
+// return binare;
+// }
+
+// Задача 45: Напишите программу, которая будет создавать копию
+// заданного массива с помощью поэлементного копирования.
+
+// int[] collection = new int[] {1, 2, 3, 4, 5};
+// int[] copyCollection = GetArray(collection);
+// PrintArray(copyCollection);
+
+// int[] GetArray(int[] arr)
+// {
+// int[] array = new int[arr.Length];
+// for (int i = 0; i < array.Length; i++)
+// {
+// array[i] = arr[i];
+// }
+// return array;
+// }
+// void PrintArray(int[] array)
+// {
+// Console.Write("{");
+// for (int i = 0; i < array.Length - 1; i++)
+// {
+// Console.Write(array[i] + ", ");
+// }
+// System.Console.WriteLine(array[array.Length - 1] + "}");
+// }
+
+
