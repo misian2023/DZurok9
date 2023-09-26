@@ -504,3 +504,5 @@
 // PrintArray(matrix);
 // Console.WriteLine();
 // Console.WriteLine($"Сумма главной диагонали равна {SumOfDiagonal(matrix)}");
+
+
