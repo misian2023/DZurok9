@@ -441,3 +441,66 @@
 // }
 
 
+// Задача 51: Задайте двумерный массив. Найдите сумму
+// элементов, находящихся на главной диагонали (с индексами
+// (0,0); (1;1) и т.д.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Сумма элементов главной диагонали: 1+9+2 = 12
+
+// int WorkWithUser(string msg)
+// {
+// Console.Write(msg);
+// int number = int.Parse(Console.ReadLine());
+// return number;
+// }
+
+// int[,] GetArray(int row, int column, int minValue, int maxValue)
+// {
+// int[,] res = new int[row, column];
+// Random rnd = new Random();
+// for (int i = 0; i < row; i++)
+// {
+// for (int j = 0; j < column; j++)
+// {
+// res[i, j] = rnd.Next(minValue, maxValue + 1);
+// }
+// }
+// return res;
+// }
+// void PrintArray(int[,] array)
+// {
+// for (int i = 0; i < array.GetLength(0); i++)
+// {
+// for (int j = 0; j < array.GetLength(1); j++)
+// {
+// Console.Write(array[i, j] + " ");
+// }
+// Console.WriteLine();
+// }
+// }
+
+// int SumOfDiagonal(int[,] arr)
+// {
+// int res = 0;
+// for (int i = 0; i < arr.GetLength(0); i++)
+// {
+// for (int J = 0; J < arr.GetLength(1); J++)
+// {
+// if(i == J)
+// {
+// res += arr[i,J];
+// }
+// }
+// }
+// return res;
+// }
+
+// int rows = WorkWithUser(" Введите количество строк: ");
+// int columns = WorkWithUser("Введите количество столбцов: ");
+// int[,] matrix = GetArray(rows, columns, 1, 10);
+// PrintArray(matrix);
+// Console.WriteLine();
+// Console.WriteLine($"Сумма главной диагонали равна {SumOfDiagonal(matrix)}");
